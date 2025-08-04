@@ -1,3 +1,33 @@
+// Brute Force
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        vector<int> temp;
+        int n = nums.size();
+
+        for(int i = 0; i<n; i++){
+            if(nums[i] != 0){
+                temp.push_back(nums[i]);
+            }
+        }
+
+        int nz = temp.size();
+
+        for(int i = 0; i<nz; i++){
+            nums[i] = temp[i];
+        }
+        for(int i = nz; i<n; i++){
+            nums[i] = 0;
+        }
+        
+    }
+};
+
+// Time Complexity:O(n)
+// Space Complexity:O(n)
+
+
+// Optimal
 class Solution{
 public:
     void moveZeroes(vector<int> &arr){
@@ -20,3 +50,6 @@ public:
     }
 
 };
+
+// TC = O(N)
+// SC = O(1)
