@@ -49,7 +49,7 @@ void setMatrixZeroes(vector<vector<int>> &mat){
         for(int j=1; j<m; j++){
             if(mat[i][j]!=0){
                 if(mat[i][0]==0 || mat[0][j]==0){
-                    mat[i][j]==0;
+                    mat[i][j]=0;
                 }
             }
         }
@@ -57,7 +57,7 @@ void setMatrixZeroes(vector<vector<int>> &mat){
     if(mat[0][0]==0){
         for(int j=0; j<m; j++) mat[0][j]=0;
     }
-    if(col0=0){
+    if(col0==0){
         for(int i=0; i<n; i++) mat[i][0]=0;
     }
 }
