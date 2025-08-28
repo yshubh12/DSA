@@ -49,6 +49,7 @@ vector<vector<int>> threeSum(vector<int>& nums) {
 // TC: O(N log n) + O(N^2)
 
 vector<vector<int>> threeSum(vector<int>& nums) {
+    sort(nums.begin(), nums.end());
     vector<vector<int> ans;
     int n=nums.size();
     for(int i=0; i<n; i++){
