@@ -19,7 +19,6 @@ int nthRoot(int n,int m){
         if(midF==1) return mid;
         else if(midF==2) return high=mid-1;
         else low=mid+1;
-        
     }
     return -1;
 }
