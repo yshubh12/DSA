@@ -11,7 +11,6 @@ int countStudents(vector<int>& arr, int pages){
         }
     }
     return students;
-    
 }
 
 int findPages(vector<int>& arr, int n, int students){
